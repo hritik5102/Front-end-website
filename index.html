@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CarInfo | Home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="car information,latest car,budget car">
+    <meta name="keywords" content="HTML,CSS,XML,XHTML,JavaScript">
+    <meta name="author" content="Hritik Jaiswal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="https:car Info.com">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!---    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    -->
+
+    <script src="Website.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <div id="branding">
+            <a href="index.html"><img src="Car_Logo.PNG" alt="logo"></a>
+        </div>
+
+
+
+        <div class="search-box">
+
+            <input class="search-txt" type="text" name="" placeholder="Type to Search">
+            <a class="search-btn" href="#">
+                <i class="fa fa-search"></i></a>
+        </div>
+
+        <div id="center">
+            <h2>Best Car Information Website</h2>
+
+        </div>
+
+        <div class="container">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li id="categories"><a href="#">CATEGORIES +</a>
+                        <ul>
+
+                            <li id="da">
+                                <a href="#">NEW CARS+</a>
+                                <ul>
+                                    <li><a href="#">LATEST CARS</a></li>
+                                    <li><a href="#">POPULAR CARS</a></li>
+                                </ul>
+                            </li>
+                            <li id="daa">
+                                <a href="#">OLD CARS +</a>
+                                <ul>
+                                    <li><a href="#">SEARCH USE CAR</a></li>
+                                    <li><a href="#">SELL USE CAR </a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">EXPERT REVIEWS</a></li>
+                            <li><a href="#">USER REVIEWS</a></li>
+
+                            <li><a href="#">SUBSCRIBE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html">ABOUT US</a></li>
+
+                    <li><a href="Contact.html">CONTACT</a></li>
+                    <li><a href="validation.html">LOGIN</a></li>
+                    <li><a href="compare car.html">COMPARE CAR</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+    <section id="showcase">
+        <!--
+        <div class="container1">
+            <img src="model.jpg" width="100%" alt="model">
+            <div class="center">
+                <h2>Best Car information website</h2>
+            </div>
+
+        </div>
+        -->
+        <div class="container12">
+
+
+            <div id="slider">
+
+                <ul class="slides">
+
+                    <li class="slide slide1"><img src="animated.jpg" width="100%"></li>
+                    <li class="slide slide2"><img src="model.jpg" width="100%"></li>
+                    <li class="slide slide3"><img src="model3.jpg" width="100%"></li>
+                    <li class="slide slide4"><img src="model4.jpg" width="100%"></li>
+                    <li class="slide slide1"><img src="animated.jpg" width="100%"></li>
+                </ul>
+            </div>
+
+            <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+            <script>
+                $(function() {
+
+                    //settings for slider
+                    var width = 720;
+                    var animationSpeed = 1000;
+                    var pause = 3000;
+                    var currentSlide = 1;
+
+                    //cache DOM elements
+                    var $slider = $('#slider');
+                    var $slideContainer = $('.slides', $slider);
+                    var $slides = $('.slide', $slider);
+
+                    var interval;
+
+                    function startSlider() {
+                        interval = setInterval(function() {
+                            $slideContainer.animate({
+                                'margin-left': '-=' + width
+                            }, animationSpeed, function() {
+                                if (++currentSlide === $slides.length) {
+                                    currentSlide = 1;
+                                    $slideContainer.css('margin-left', 0);
+                                }
+                            });
+                        }, pause);
+                    }
+
+                    function pauseSlider() {
+                        clearInterval(interval);
+                    }
+
+                    $slideContainer
+                        .on('mouseenter', pauseSlider)
+                        .on('mouseleave', startSlider);
+
+                    startSlider();
+
+
+                });
+            </script>
+        </div>
+
+    </section>
+
+
+    <section id="newsletter">
+
+        <!-- For subscription page-->
+        <div class="container">
+            <h1>Subscribe to our website for more detail</h1>
+            <form action="welcome_get.php" method="get">
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="boxes">
+        <!---For flex -->
+        <div class="research">
+            <h3>Research car model</h3>
+        </div>
+        <div class="container">
+            <div class="box">
+
+                <div class="item">
+                    <div class="zoom">
+
+                        <a href="https://www.cartrade.com/new-cars/sedan-cars/best-sedans-in-india">
+                            <img src="sedan2.jpg" alt="sedan">
+                        </a>
+                        <h4> Sedan </h4>
+                        <p>The primary benefit of sedans over wagons is variety. While there are only a few wagons on the market, there are dozens of sedans -- and that gives you a better chance to get a good deal, since the market is far more competitive</p>
+                    </div>
+                </div>
+
+
+
+                <div class="item">
+                    <div class="zoom">
+
+                        <a href="https://www.caranddriver.com/best-sports-cars">
+                            <img src="sport.jpg" alt="sedan">
+                        </a>
+                        <h4>Sport Cars</h4>
+                        <p>Very powerful engine, aerodynamic profile, multiple driving modes, electrically actuated spoilers and diffusers which creates more stability and even more performance, lots of features, aggressive looks, strong body, responsive
+                            functions, racing ergonomics, paddle shifters, 2 doors only.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="zoom">
+
+                        <a href="https://www.cardekho.com/new-jaguar+luxury+cars?utm_campaign=DSA-Jaguar-NCD&utm_device=c&utm_term=&network=g&utm_medium=cpc&utm_source=google&agid=59443669627&ap=1t1&aoi=&ci=1453823258&cre=278353258262&fid=&lop=9062272&ma=b&mo=&pl=&ti=dsa-296684145008&gclid=EAIaIQobChMIyZOM967m4AIVh4yPCh3dggb3EAAYASAAEgLCxPD_BwE">
+                            <img src="luxury.jpg" alt="sedan">
+                        </a>
+                        <h4>Luxury Cars</h4>
+                        <p>Sometimes, when you buy luxury cars, you realise, some features just exist because they are cool AF. Nothing else, no extra functionalities, nothing. They simply exist because they're cool. </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="zoom">
+
+                        <a href="https://www.zigwheels.com/newcars/best-SUV-cars">
+                            <img src="Suv.jpg" alt="sedan">
+                        </a>
+                        <h4>SUV</h4>
+                        <p>That's especially true of family-friendly SUVs, which continue to offer increasingly long lists of features that will make your life easier. We've listed some of our favorite SUV features below. </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="zoom">
+
+                        <a href="https://www.carwale.com/marutisuzuki-cars/s-cross/">
+                            <img src="cross.jpg" alt="sedan">
+                        </a>
+                        <h4>Cross Car</h4>
+                        <p>My cozin have a S-cross once am drive it super feeling in drive. Good and excitement and am prepared this nexa model any one It is very good performance and comfortable</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="zoom">
+                        <a href="https://www.mahindrafirstchoice.com/buy/used-cars/mumbai?utm_source=Google&utm_medium=CPC&utm_campaign=Category&gclid=EAIaIQobChMIlI3ov8Dm4AIViIePCh2OawrdEAAYASAAEgJSIfD_BwE">
+                            <img src="preowned.jpg" alt="sedan">
+
+                        </a>
+                        <h4>Pre-Owned Car</h4>
+                        <p>Concorde Motors is there with you at every drive of life. Then whether it’s buying a new car or selling an old one. Which is why, we have designed unique pre-owned vehicle programs</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="zoom">
+
+                        <a href="https://www.caranddriver.com/best-minivans-vans">
+                            <img src="mini-van.jpg" alt="sedan">
+                        </a>
+                        <h4>Mini Car</h4>
+                        <p>Focused on utility and economy, the Transit Connect is available in both short and long wheelbases.</p>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="zoom">
+                        <a href="https://www.carmagazine.co.uk/hybrid/best-hybrid-cars-and-plug-ins/">
+                            <img src="hybrid.jpg" alt="sedan">
+                        </a>
+                        <h4>Hybrid Cars</h4>
+                        <p>Essentially, the goverment's program to encourage hybrid and electric car sales has been way more popular than it expected:</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="Event_handle">
+        <div class="event">
+            <div class="info">
+                <h2>Property Of Cars</h2>
+            </div>
+            <br>
+            <br>
+
+            <h3>Alloy Wheels</h3>
+            <p>
+                <img src="alloy.jpg" alt="alloy">
+                <br>So you're growing up and swapping your sporty coupe or convertible for a family sedan. That doesn't mean you need to skip out on style -- which is exactly why you should make sure your next midsize sedan includes alloy wheels. They're
+                more expensive than steel wheels with hubcaps, and they're more prone to curb damage and a rougher ride, but there's little doubt that alloy wheels help you stand out far more than generic steel wheels with hubcaps. They may not be a must-have
+                like safety technology or a great stereo, but alloy wheels give you an attractive look. They'll also make things easier when it's time for resale.<br>
+
+            </p>
+
+            <h3>Camera Technology</h3>
+            <p>
+                <img src="camera.jpg" alt="alloy">
+
+                <br>No matter which midsize model you choose, you'll want to spring for some sort of camera technology -- both for convenience and safety. Our favorite system is Honda's LaneWatch blind spot monitoring system, which activates when you
+                put on your turn signal in order to show you what's in your blind spot. Even if you don't end up with an Accord, most midsize sedans offer useful backup cameras that give distance markers showing exactly how far you are from any objects
+                -- a useful feature that can come in handy for tight maneuvers in small spaces.<br>
+
+            </p>
+
+            <h3>Heated Rear Seats</h3>
+            <p>
+                <img src="sheat.jpg" alt="alloy">
+
+                <br>It may seem opulent, but more and more mainstream cars -- from midsize sedans to compact hatchbacks -- are now adding available heated rear seats. If you have kids, you'll want to check this option box; they'll love the novelty of
+                the feature, and they'll also appreciate its practicality on cold days. But even if it's only a few other adults that you'll be shuttling around, you'll find that heated rear seats will impress nearly anyone who rides in your car -- all
+                for just a few dollars extra on your monthly payment.<br>
+
+            </p>
+            <h3>Safety Warning Systems</h3>
+
+            <p>
+                <img src="safe.jpg" alt="alloy">
+
+                <br>In today's modern world, many new cars offer a series of safety warning systems that will dramatically help out even the most experienced driver. We strongly recommend that you get at least a few of these features, which include forward-collision
+                warning, blind spot monitoring and rear cross-traffic alert, a system that's designed to monitor the road behind you and alert you of any problems as you back out of a parking space. While these systems won't prevent a crash, they can
+                certainly make it a lot easier to avoid one -- good news if you have kids in the car.<br>
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+    <a class="Show_more">Show More</a>
+
+    <script src="test.js">
+    </script>
+
+
+
+
+    <section id="team-work">
+
+        <div class="team-section">
+            <div class="inner-width">
+                <h1>Meet Our Team</h1>
+                <div class="pers">
+
+
+                    <div class="pe">
+                        <img src="Hr.jpg" alt="">
+                        <div class="p-name">Hritik Jaiswal</div>
+                        <div class="p-des">Founder</div>
+                        <div class="p-sm">
+                            <a href="#"><i class="fa fa-3x fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-3x fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-3x fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="pe">
+                        <img src="NIket.jpg" alt="">
+                        <div class="p-name">Niket Mehta</div>
+                        <div class="p-des">C.E.O</div>
+                        <div class="p-sm">
+                            <a href="#"><i class="fa fa-3x fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-3x fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-3x fa-linkedin"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <!--Add sociai media content-->
+        <div class="social_content">
+            <h5>Follow Us on social media</h5>
+        </div>
+
+
+        <div class="Address">
+            <address>
+                <p><b>Address :</b></p>
+                <span>WebCorpCo<br></span>123 Easy Street<br>
+                Orlando, Florida, 32801<br>
+                <span>Phone: <a href="tel:5555555555">(555) 555-8899</a></span>
+            </address>
+        </div>
+
+        <div class="appStore">
+            <a href="" target="_blank"><img alt="app store" src="https://www.solodev.com/assets/footer/appstore.png"></a>
+        </div>
+        <div class="playStore">
+            <a href="" target="_blank"><img alt="google play store" src="https://www.solodev.com/assets/footer/androidstore.png"></a>
+        </div>
+
+
+        <div class="wrapper">
+            <a href="https://www.facebook.com/hritik.jaiswal.56808"><i class="fa fa-3x fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hritik_dj/"><i class="fa fa-3x fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/hritik-jaiswal-22a136166/"><i class="fa fa-3x fa-linkedin"></i></a>
+            <a href="https://plus.google.com/"><i class="fa fa-3x fa-google-plus"></i></a>
+
+
+        </div>
+        <div class="copyright">
+            <p>Basic website design, copyright &copy;2018</p>
+            <a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by CarInfo on <a href="" target="_blank">VS Code</a>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

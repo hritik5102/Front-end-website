@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comape car</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+<style>
+    .text h1 {
+        text-align: center;
+    }
+    
+    .text {
+        margin-left: 20px;
+    }
+    
+    #compare {
+        margin: 20px 20px 20px 20px;
+    }
+    
+    .make-default {
+        padding: 15px 0 22px;
+        position: relative;
+        margin: 45px auto;
+    }
+    
+    .choose-car {
+        display: block;
+        min-height: 52px;
+    }
+    
+    .input {
+        padding-left: 12px;
+    }
+    
+    .conatiner {
+        padding: 15px;
+        margin: top;
+        float: left;
+        ;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: #c0041d;
+        padding: 14px 0;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 8px;
+        width: calc(100% / 4);
+        text-align: center;
+        border-radius: 1px solid #e6dfdf;
+    }
+    
+    .id {
+        margin-top: 15em;
+    }
+    
+    .header img {
+        margin-top: 5em;
+    }
+    
+    footer {
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div class="text">
+        <h1>Comapre cars </h1>
+        <h2>Select cars to compare</h2>
+        <p>Note: Select at least two or more cars of your choice for comparison.</p>
+    </div>
+
+
+    <div id="compare">
+        <table class="Compare table">
+            <tbody>
+                <tr class="header">
+                    <td>
+                        <h3 class="make-default">CAR 1</h3>
+                        <img src="nocar.jpg" width="60%">
+                        <span class="choose-car"></span>
+                        <ul>
+
+                            <li>
+                                <select class="input" name="Make">
+                            <option value>Select Car </option>
+                            <option value="125">Maruti Suzuki</option>
+                            <option value="115">Hyundai</option>
+                            <option value="140">Tata</option>
+                            <option value="122">Mahindra</option>
+                        </select>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <select class="input" name="model">
+                                
+                                <option>Select Model</option>
+                                <option value="125">Mini Car</option>
+                                <option value="115">Sedan Car</option>
+                                <option value="140">SUV car</option>
+                                <option value="122">Pre-Owned car</option>
+    
+                            </select>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <select class="input" name="type">
+                                <option>Select variant</option>
+                                <option value="125">LXI</option>
+                                <option value="115">VXI</option>
+                                <option value="140">ZXI</option>
+                                
+                            </select>
+                            </li>
+                        </ul>
+
+
+
+
+                    </td>
+
+                    <td class="id">
+                        <h3 class="container">CAR 2</h3>
+                        <img src="nocar1.png">
+                        <span class="choose-car"></span>
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
+
+
+
+
+                        <ul>
+
+                            <li>
+                                <select class="input" name="Make">
+						<option value>Select Car </option>
+						<option value="125">Maruti Suzuki</option>
+						<option value="115">Hyundai</option>
+						<option value="140">Tata</option>
+						<option value="122">Mahindra</option>
+					</select>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <select class="input" name="model">
+							
+                            <option>Select Model</option>
+                            <option value="125">Mini Car</option>
+                            <option value="115">Sedan Car</option>
+                            <option value="140">SUV Car</option>
+                            <option value="122">Pre-Owned Car</option>
+
+						</select>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <select class="input" name="type">
+                            <option>Select variant</option>
+                            <option value="125">LXI</option>
+                            <option value="115">VXI</option>
+                            <option value="140">ZXI</option>
+                            </select>
+                            </li>
+                        </ul>
+
+
+
+                    </td>
+                </tr>
+            </tbody>
+
+
+        </table>
+        <footer>
+            <button type="button" class="btn">Compre cars</button>
+        </footer>
+    </div>
+</body>
+
+</html>
